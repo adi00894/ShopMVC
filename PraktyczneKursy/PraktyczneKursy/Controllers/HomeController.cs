@@ -17,14 +17,12 @@ namespace PraktyczneKursy.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            //sss
-            //sss
             ICacheProvider cache = new DefaultCacheProvider();
 
             List<Kategoria> kategorie;
             if (cache.IsSet(Consts.KategorieCacheKey))
             {
-                kategorie = cache.Get(Consts.BestselerCacheKey) as List<Kategoria>;
+                kategorie = cache.Get(Consts.KategorieCacheKey) as List<Kategoria>;
             }
             else
             {

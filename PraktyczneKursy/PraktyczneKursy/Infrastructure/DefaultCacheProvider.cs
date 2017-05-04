@@ -8,7 +8,7 @@ namespace PraktyczneKursy.Infrastructure
 {
     public class DefaultCacheProvider : ICacheProvider
     {
-        private Cache cache { get { return HttpContext.Current.Cache; } }
+        private Cache cache { get { return HttpContext.Current?.Cache; } }
 
         public object Get(string key)
         {

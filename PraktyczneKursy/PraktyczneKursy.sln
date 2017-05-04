@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraktyczneKursy", "PraktyczneKursy\PraktyczneKursy.csproj", "{926E180C-4AD3-4240-A66A-248324C0DA0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraktyczneKursy.Tests", "PraktyczneKursy.Tests\PraktyczneKursy.Tests.csproj", "{F8B20D99-6A69-4486-973C-5D7D73F073B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraktyczneKursy.Test", "PraktyczneKursy.Test\PraktyczneKursy.Test.csproj", "{464D958B-F82C-4282-8725-37D731C2A200}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{926E180C-4AD3-4240-A66A-248324C0DA0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{926E180C-4AD3-4240-A66A-248324C0DA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{926E180C-4AD3-4240-A66A-248324C0DA0E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F8B20D99-6A69-4486-973C-5D7D73F073B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F8B20D99-6A69-4486-973C-5D7D73F073B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F8B20D99-6A69-4486-973C-5D7D73F073B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F8B20D99-6A69-4486-973C-5D7D73F073B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{464D958B-F82C-4282-8725-37D731C2A200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{464D958B-F82C-4282-8725-37D731C2A200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{464D958B-F82C-4282-8725-37D731C2A200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{464D958B-F82C-4282-8725-37D731C2A200}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
