@@ -1,0 +1,71 @@
+﻿@model  PraktyczneKursy.ViewModels.HomeViewModel
+@using PraktyczneKursy.Infrastructure
+@{
+    ViewBag.Tytle = "Praktyczne kursy";
+}
+
+
+
+<nav class="kategorieHorizontal">
+    <ul>
+        @foreach (var kategoria in Model.Kategorie)
+        {
+            <li>
+                <a href="@Url.Action("Lista","Kursy", new {nazwaKategori=kategoria.NazwaKategorii.ToLower()})"
+                   style="background-image: url(@Url.IkonyKategoriiSciezka(kategoria.NazwaPlikuKategorii));">
+                    @kategoria.NazwaKategorii
+                </a>
+            </li>
+        }
+    </ul>
+    <a href="link">
+        <img id="baner" src="../Content/Images/baner.png" />
+    </a>
+</nav>
+
+<section>
+    <ul class="KursyTrzyKolumny duzaListaKursy">
+
+        @foreach (var nowosc in Model.Nowosci)
+        {
+            <li>
+                <article>
+                    <a class="dodajDoKoszykaLink" href="@Url.Action("DodajDoKoszyka","Koszyk", new {id=nowosc.KursId})">
+                        <img src="../Content/Images/koszyk.png" />
+                    </a>
+                    <a class="kursSzczegolyLink" href="@Url.Action("Szczegoly","Kursy",new {id=nowosc.KursId})">
+                        <div class="newFlag"></div>
+                        <img class="kurs" src="@Url.ObrazkiSciezka(nowosc.NazwaPlikuObrazka)" />
+                        <h1>
+                            @nowosc.TytulKursu - @nowosc.AutorKursu
+                        </h1>
+                    </a>
+                </article>
+
+            </li>
+        }
+    </ul>
+</section>
+
+
+<section>
+    <ul class="KursyTrzyKolumny duzaListaKursy">
+        @foreach (var bestseler in Model.Bestselery)
+        {
+            <li>
+                <article>
+                    <a class="dodajDoKoszykaLink" href="@Url.Action("DodajDoKoszyka","Koszyk", new {id=bestseler.KursId})">
+                        <img src="../Content/Images/koszyk.png" />
+                    </a>
+                    <a class="kursSzczegolyLink" href="@Url.Action("Szczegoly","Kursy",new {id=bestseler.KursId})">
+                        <div class="bestsellerFlag"></div>
+                        <img class="kurs" src="@Url.ObrazkiSciezka(bestseler.NazwaPlikuObrazka)" />
+                        <h1>
+                            @bestseler.TytulKursu - @bestseler.AutorKursu
+                        </h1>
+                    </a>
+                </article>
+            </li>
+        }
+    </ul>
+</section>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
+            xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
+
+  <mvcSiteMapNode title="Home" controller="Home" action="Index">
+    <mvcSiteMapNode title="Kategorie" controller="Kursy" action="Lista" dynamicNodeProvider="PraktyczneKursy.Infrastructure.KategorieDynamicNodeProvider, PraktyczneKursy" >
+      <mvcSiteMapNode title="Kurs" controller="Kursy" action="Szczegoly" dynamicNodeProvider="PraktyczneKursy.Infrastructure.KursySzczegolyDinamicNodeProvider, PraktyczneKursy"/>
+    </mvcSiteMapNode>
+    <mvcSiteMapNode title="Koszyk" controller="Koszyk" action="Index">
+      <mvcSiteMapNode title="Dane zamowienia" controller="Koszyk" action="Zaplac"/>
+      <mvcSiteMapNode title="Potwierdzenie zamowienia" controller="Koszyk" action="PotwierdzZamowienie"/>
+    </mvcSiteMapNode>
+  </mvcSiteMapNode>
+
+</mvcSiteMap>
