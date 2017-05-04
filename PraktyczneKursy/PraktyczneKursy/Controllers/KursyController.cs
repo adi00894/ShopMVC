@@ -12,10 +12,10 @@ namespace PraktyczneKursy.Controllers
          private KursyKontext _db = new KursyKontext();
 
         // GET: Kursy
-        public ActionResult Index()
-        {
-            return View();
-        }
+        //public ActionResult Index()
+        //{
+        //    return View();
+        //}
 
         public ActionResult Lista(string nazwaKategori, string searchQuery= null)
         {
