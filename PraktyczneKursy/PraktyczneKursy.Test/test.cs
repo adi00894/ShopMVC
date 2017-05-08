@@ -16,6 +16,7 @@ namespace PraktyczneKursy.Test
         [Test]
         public void Methond()
         {
+            //commit
             var wrapper = MockRepository.GenerateMock<DefaultCacheProvider>();
             wrapper.Expect(x => x.IsSet(Consts.KategorieCacheKey));
 
